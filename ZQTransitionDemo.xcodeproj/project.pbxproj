@@ -14,6 +14,11 @@
 		6B53B83A227834780006B904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B53B838227834780006B904 /* LaunchScreen.storyboard */; };
 		6B53B845227834790006B904 /* ZQTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B844227834790006B904 /* ZQTransitionDemoTests.swift */; };
 		6B53B850227834790006B904 /* ZQTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B84F227834790006B904 /* ZQTransitionDemoUITests.swift */; };
+		6B53B85E227834C60006B904 /* ZQToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B85D227834C60006B904 /* ZQToViewController.swift */; };
+		6B53B860227836C40006B904 /* ZQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B85F227836C40006B904 /* ZQTableViewController.swift */; };
+		6B53B86322783FEE0006B904 /* ZQBaseAninatedTranistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B86222783FEE0006B904 /* ZQBaseAninatedTranistion.swift */; };
+		6B53B8672278408A0006B904 /* ZQFullCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B8662278408A0006B904 /* ZQFullCoverViewController.swift */; };
+		6B53B869227841570006B904 /* ZQFullCoverAnimatedTranistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53B868227841570006B904 /* ZQFullCoverAnimatedTranistion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		6B53B84B227834790006B904 /* ZQTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B53B84F227834790006B904 /* ZQTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		6B53B851227834790006B904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B53B85D227834C60006B904 /* ZQToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQToViewController.swift; sourceTree = "<group>"; };
+		6B53B85F227836C40006B904 /* ZQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQTableViewController.swift; sourceTree = "<group>"; };
+		6B53B86222783FEE0006B904 /* ZQBaseAninatedTranistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQBaseAninatedTranistion.swift; sourceTree = "<group>"; };
+		6B53B8662278408A0006B904 /* ZQFullCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQFullCoverViewController.swift; sourceTree = "<group>"; };
+		6B53B868227841570006B904 /* ZQFullCoverAnimatedTranistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZQFullCoverAnimatedTranistion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,11 @@
 		6B53B82E227834660006B904 /* ZQTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6B53B86122783FC40006B904 /* AnimatedTranistion */,
 				6B53B82F227834660006B904 /* AppDelegate.swift */,
 				6B53B831227834660006B904 /* ViewController.swift */,
+				6B53B85D227834C60006B904 /* ZQToViewController.swift */,
+				6B53B85F227836C40006B904 /* ZQTableViewController.swift */,
 				6B53B833227834660006B904 /* Main.storyboard */,
 				6B53B836227834780006B904 /* Assets.xcassets */,
 				6B53B838227834780006B904 /* LaunchScreen.storyboard */,
@@ -123,6 +136,16 @@
 				6B53B851227834790006B904 /* Info.plist */,
 			);
 			path = ZQTransitionDemoUITests;
+			sourceTree = "<group>";
+		};
+		6B53B86122783FC40006B904 /* AnimatedTranistion */ = {
+			isa = PBXGroup;
+			children = (
+				6B53B86222783FEE0006B904 /* ZQBaseAninatedTranistion.swift */,
+				6B53B868227841570006B904 /* ZQFullCoverAnimatedTranistion.swift */,
+				6B53B8662278408A0006B904 /* ZQFullCoverViewController.swift */,
+			);
+			path = AnimatedTranistion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B53B860227836C40006B904 /* ZQTableViewController.swift in Sources */,
+				6B53B85E227834C60006B904 /* ZQToViewController.swift in Sources */,
+				6B53B8672278408A0006B904 /* ZQFullCoverViewController.swift in Sources */,
+				6B53B86322783FEE0006B904 /* ZQBaseAninatedTranistion.swift in Sources */,
+				6B53B869227841570006B904 /* ZQFullCoverAnimatedTranistion.swift in Sources */,
 				6B53B832227834660006B904 /* ViewController.swift in Sources */,
 				6B53B830227834660006B904 /* AppDelegate.swift in Sources */,
 			);
@@ -433,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AQ2BML8U7;
 				INFOPLIST_FILE = ZQTransitionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AQ2BML8U7;
 				INFOPLIST_FILE = ZQTransitionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

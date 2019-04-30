@@ -12,9 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.addChild(ZQTableViewController())
+        
     }
 
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        ///
+//        let vc = ZQToViewController()
+//        let nvc = UINavigationController(rootViewController: vc)
+//        navigationController?.pushViewController(nvc, animated: true)
+//    }
 
 }
 
